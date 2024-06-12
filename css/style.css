@@ -1,1 +1,98 @@
-
+@media screen and (min-width:1024px){
+/* Hero */
+.Hero{
+    /* margin-top: 90px;　←headerの幅で変えて～ */
+}
+.hero_pc{
+    position:relative;
+}
+.hero_sp{
+    display:none;
+}
+.herophoto1{
+    width:100%;
+}
+.hero_pc h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin :0;
+    padding: 0;
+    font-size: 28px;
+    font-family: 'Noto Sans JP , sans-serif';
+    font-weight: bold;
+    color: #3e3a39;
+}
+/* SectionTitle */
+h2{
+    color: #3e3a39;
+    font-family: 'Noto Sans JP", sans-serif';
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: solid 2.5px #F3982D;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+}
+h2::after{
+    position: absolute;
+    content: '';
+    display: block;
+    border-bottom: solid 2.5px #59c3e1;
+    width: 50%;
+    bottom: -2px;
+}
+}
+@media screen and (max-width:1023px){
+    /* Hero */
+    .Hero{
+        /* margin-top: ;←headerの幅で変えて2 */
+    }
+    .hero_sp{
+        position: relative;
+    }
+    .hero_pc{
+        display: none;
+    }
+    .herophoto2{
+        width: 100%;
+    }
+    .hero_sp h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-family: 'Noto Sans JP , sans-serif';
+        font-weight: bold;
+        color: #3e3a39;
+    }
+    /* SectionTitle */
+    h2{
+        color: #3e3a39;
+        font-family: 'Noto Sans JP , sans-serif';
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        border-bottom: 2px solid #F3982D;
+        position: relative;
+        display: inline-block;
+        padding: 5px 0;
+    }
+    h2::after{
+        position: absolute;
+        content: '';
+        display: block;
+        border-bottom: 2px solid #59c3e1;
+        width: 50%;
+        bottom: -2px;
+    }
+}
