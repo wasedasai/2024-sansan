@@ -53,12 +53,6 @@ nav .inner ul li a {
 nav .inner ul li a:hover {
     background: #ebf6fb;
 }
-@media screen and (max-width: 767px) {
-    nav {
-        right: -220px;
-        width: 220px;
-    }
-}
 
 .toggle_btn {
     display: block;
@@ -136,7 +130,7 @@ main h1 {
 @media screen and (min-width:1024px){
 /* Hero */
 .Hero{
-    margin-top: 50px;
+    padding-top: 50px;
 }
 .hero_pc{
     position:relative;
