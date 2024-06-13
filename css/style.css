@@ -136,7 +136,7 @@ main h1 {
 @media screen and (min-width:1024px){
 /* Hero */
 .Hero{
-    /* margin-top: 90px;　←headerの幅で変えて～ */
+    margin-top: 50px;
 }
 .hero_pc{
     position:relative;
