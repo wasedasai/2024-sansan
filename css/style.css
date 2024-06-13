@@ -1,7 +1,136 @@
+/*header+hamburger------------------------------------------------------------*/
+.header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #f3982d;
+    z-index: 100;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    width: 300px;
+    background: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all .5s;
+    z-index: 90;
+    opacity: 0;
+}
+.open nav {
+    right: 0;
+    opacity: 1;
+}
+nav .inner {
+    padding: 10px;
+    padding-top: 70px;
+}
+nav .inner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav .inner ul li {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #333;
+}
+nav .inner ul li a {
+    display: block;
+    color: #333;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 14px;
+    padding: 1em;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+nav .inner ul li a:hover {
+    background: #ebf6fb;
+}
+
+.toggle_btn {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 100;
+}
+.toggle_btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+    top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+    top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+    bottom: 4px;
+}
+.open .toggle_btn span {
+    background-color: #fff;
+}
+.open .toggle_btn span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+}
+.open .toggle_btn span:nth-child(2) {
+    opacity: 0;
+}
+.open .toggle_btn span:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+}
+
+#mask {
+    display: none;
+    transition: all .5s;
+}
+.open #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: 80;
+    cursor: pointer;
+}
+
+main {
+    padding: 50px;
+}
+main h1 {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+/*header end------------------------------------------------------------*/
+
+
 @media screen and (min-width:1024px){
 /* Hero */
 .Hero{
-    /* margin-top: 90px;　←headerの幅で変えて～ */
+    padding-top: 50px;
 }
 .hero_pc{
     position:relative;
@@ -48,9 +177,15 @@ h2::after{
 }
 }
 @media screen and (max-width:1023px){
+/*header+hamburger--------------------*/
+nav {
+    right: -220px;
+    width: 220px;
+}
+
     /* Hero */
     .Hero{
-        /* margin-top: ;←headerの幅で変えて2 */
+        padding-top: 50px;
     }
     .hero_sp{
         position: relative;

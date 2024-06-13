@@ -12,6 +12,51 @@
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
 </head>
 <body>
+    <!-- Header+hamburger -->
+    <div class="header">
+    </div>
+    <div id="navArea">
+        <nav>
+            <div class="inner">
+                <ul>
+                    <li><a href="top.html">Top</a></li>
+                    <li><a href="sansan.html">参加団体・参加者企画</a></li>
+                    <li><a href="staff.html">運営スタッフ企画</a></li>
+                    <li><a href="howto.html">募集の流れ</a></li>
+                    <li><a href="info.html">参加の手引き</a></li>
+                    <li><a href="#">プレエントリーフォーム</a></li>
+                    <li><a href="top.html#president_sec">代表挨拶</a></li>
+                    <li><a href="question.html">よくあるご質問・お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="mask"></div>
+    </div>
+    <script>
+        (function($) {
+        var $nav   = $('#navArea');
+        var $btn   = $('.toggle_btn');
+        var $mask  = $('#mask');
+        var open   = 'open';
+        $btn.on( 'click', function() {
+            if ( ! $nav.hasClass( open ) ) {
+            $nav.addClass( open );
+            } else {
+            $nav.removeClass( open );
+            }
+        });
+        $mask.on('click', function() {
+            $nav.removeClass( open );
+        });
+        } )(jQuery);
+    </script>
+    <!-- Header+hamburger end-->
+    
     <!-- Hero -->
      <div class="Hero">
         <div class="hero_pc">
