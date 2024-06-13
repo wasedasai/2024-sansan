@@ -185,7 +185,7 @@ nav {
 
     /* Hero */
     .Hero{
-        /* margin-top: ;←headerの幅で変えて2 */
+        padding-top: 50px;
     }
     .hero_sp{
         position: relative;
