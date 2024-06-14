@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+}
+
+.ss_contents > h1{
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: clamp(24px, 5vw, 48px);
+    color: #3e3a39;
+    font-weight: bold;
+}
+.ss_contents{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: clamp(100px,50vw,200px);
+}
+.ss_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+}
+@media screen and (max-width: 1023px) {
+    .ss_contents{
+        max-width: 666px;
+        padding: 0 2% 0 2%;
+    }
+    .ss_list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.ss_event{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: end;
+    border: 2px solid #59C3E1;
+    aspect-ratio: 0.75;
+}
+@media screen and (max-width: 1023px) {
+    .ss_event{
+        border: 1px solid #59C3E1;
+    }
+}
+.ss_inner{
+    position: relative;
+    width: 95%;
+    height: 97%;
+    margin: auto auto;
+    background-position: center;
+}
+.ssev09{
+    background-image: url("../img/us_opening.jpg");
+    background-size: 220%;
+}
+.ssev10{
+    background-image: url("../img/us_ending.jpg");
+    background-size: 220%;
+}
+.ssev11{
+    background-image: url("../img/us_switch.jpg");
+    background-size: 120%;
+}
+.ssev12{
+    background-image: url("../img/us_ce.jpg");
+    background-size: 200%;
+}
+.ssev13{
+    background-image: url("../img/us_previous.jpg");
+    background-size: 220%;
+}
+.ssev14{
+    background-image: url("../img/us_parade.jpg");
+    background-size: 100%;
+}
+.ssev15{
+    background-image: url("../img/us_middle.jpg");
+    background-size: 250%;
+}
+.ssev16{
+    background-image: url("../img/us_develop.jpg");
+    background-size: 250%;
+}
+.ssev17{
+    background-image: url("../img/us_salon.jpg");
+    background-size: 120%;
+}
+.ssev18{
+    background-image: url("../img/us_workshop.jpg");
+    background-size: 220%;
+}
+.ss_inner > h{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 2%;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: clamp(11px, 3.5vw, 22px);
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 2;
+}
+.ss_inner::after{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    content: "";
+    background: linear-gradient(rgb(255,255,255,0),#000000);
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+}
+
+/*option*/
+.under_margin{
+    margin-bottom: 50px;
+}
