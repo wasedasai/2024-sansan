@@ -1,0 +1,76 @@
+
+body{
+    color: #3e3a39;
+    font-family: 'Noto Sans JP , sans-serif';
+    font-size: 20px;
+}
+.sansan-container{
+    width: 90vw;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+}
+.dantai-container{
+    width: 90vw;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.sansantaisyo{
+    margin: 10px auto 30px auto;
+}
+.kasen{
+    border-bottom: 1.5px solid #aeddee;
+    padding-bottom: .1em;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+}
+.taisyo-nakami{
+    margin: 0 auto;
+    padding: 0;
+}
+li{
+    display: inline-block;
+    padding: 10px;
+}
+.sansan-nagare{
+    width: 70vw;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: left;
+}
+.nagare-daimei{
+    border-bottom: 1.5px solid #aeddee;
+    font-weight: 600;
+}
+a{
+    color: #036eb8;
+}
+.tenkan{
+    font-weight: 600;
+}
+.br-sp{
+    display: none;
+}
+@media screen and (max-width:769px){
+    body{
+        font-size: 14px;
+    }
+    .sansan-container{
+        padding-top: 20px;
+    }
+    .sansantaisyo{
+        margin: 10px auto;
+    }
+    li{
+        padding: 5px 3px 3px 3px;
+    }
+    .sansan-nagare{
+        padding: 10px 0;
+        width: 87vw;
+    }
+    .br-pc{
+        display: none;
+    }
+}
