@@ -144,7 +144,7 @@ main h1 {
 @media screen and (min-width:1024px){
 /* Hero */
 .Hero{
-    padding-top: 50px;
+    margin-top: 50px;
 }
 .hero_pc{
     position:relative;
@@ -200,7 +200,7 @@ nav {
 
     /* Hero */
     .Hero{
-        padding-top: 50px;
+        margin-top: 50px;
     }
     .hero_sp{
         position: relative;
