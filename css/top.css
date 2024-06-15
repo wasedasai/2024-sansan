@@ -168,7 +168,7 @@ body{
 }
 .triple_button > a{
     position: relative;
-    height: clamp(300px, 50vw, 550px);
+    height: clamp(250px, 50vw, 550px);
     width: clamp(1px, 33%, 332px);
     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: 700;
