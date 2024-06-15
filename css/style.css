@@ -245,3 +245,78 @@ nav {
         bottom: -2px;
     }
 }
+
+
+/*06150407 add*/
+/*squarebutton--------------------*/
+.sqbutton{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+	text-decoration: none;
+    max-width: 500px;
+	margin: 10px auto;
+	padding: 0.3rem 2rem 0.3rem 2rem;
+	border: 2px solid #27acd9;
+	color: #27acd9;
+	border-radius: 100vh;
+	transition: 0.2s;
+}
+.sqbutton::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: solid 2px #27acd9;
+    border-right: solid 2px #27acd9;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+.sqbutton:hover{
+	color: #ffffff;
+	background: #27acd9;
+}
+.sqbutton:hover::after{
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+}
+@media screen and (max-width: 1023px) {
+    .sqbutton{
+        font-size: 14px;
+        max-width: 400px;
+        padding: 0.2rem 1rem 0.2rem 0.5rem;
+        border: 1px solid #27acd9;
+    }
+    .sqbutton::after{
+        border-top: solid 1px #27acd9;
+        border-right: solid 1px #27acd9;
+        right: 10px;
+        top: 8px;
+    }
+    .sqbutton:hover::after{
+        border-top: solid 1px #ffffff;
+        border-right: solid 1px #ffffff;
+    }
+}
+@media screen and (max-width: 360px) {
+    .sqbutton::after{
+        display: none;
+    }
+}
+/*squarebutton end--------------------*/
+
+/*強調・減衰--------------------**/
+.highlight{
+    font-weight: 400;
+}
+.lowlight{
+    font-weight: 100;
+    color: #727171;
+}
+/*06150407 end*/
