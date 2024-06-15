@@ -5,11 +5,21 @@ body{
 .pagetitle{
     position: relative;
     height: clamp(400px, 60vw, 600px);
-    padding-top: 50px;
+    margin-top: 50px;
     overflow: hidden;
-    background-image: url("../img/photogallery-1.jpg");
-    background-size: 250%;
+    background: url("../img/top_background.jpg") repeat-x;
     background-position: center;
+    background-size: auto 100%;
+    -webkit-animation: bgroop 240s linear infinite;
+    animation: bgroop 240s linear infinite;
+}
+@-webkit-keyframes bgroop {
+    from {background-position: 0  0;}
+    to {background-position: -3600px 0;}
+}
+@keyframes bgroop {
+    from {background-position: 0 0;}
+    to {background-position: -3600px 0;}
 }
 .pagetitle h1{
     position: absolute;
@@ -30,6 +40,8 @@ body{
     height: clamp(100px, 20vw, 200px);
     z-index: -1;
     background-color: #ffffff;
+    border: solid 3px #f3982d;
+    border-left: none;
 }
 /*--------------------*/
 .contents{
