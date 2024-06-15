@@ -1,0 +1,128 @@
+body{
+    color: #3e3a39;
+    font-family: 'Noto Sans JP , sans-serif';
+    font-size: 20px;
+}
+section{
+    width: 90vw;
+    margin: 0 auto;
+}
+a{
+    color: #036eb8;
+}
+/* accordion */
+.question-container{
+    text-align: center;
+}
+details{
+    border: 1px solid #AEDDEE;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+summary{
+    display: block;
+    border-bottom: 1px solid #aeddee;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+details[open] .acccordion-content{
+    animation: fadeIn 0.85s ease;
+}
+.summary-content{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    color: #3e3a39;
+}
+.accordion-content > p{
+    padding: 0 16px;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-12px);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+}
+.sankaku-button{
+    display: block;
+    position: relative;
+    width: 20px;
+    margin-left: 8px;
+    flex-shrink: 0;
+    transform-origin: center 45%;
+    transition: transform 0.75s;
+}
+.sankaku-button::before,
+.sankaku-button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 2px;
+  background-color: #aeddee;
+}
+.sankaku-button::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+.sankaku-button::after {
+  right: 0;
+  transform: rotate(-45deg);
+}
+details[open] .sankaku-button{
+    transform: rotate(180deg);
+}
+/* お問い合わせ */
+.otoiawase-container{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.email-container{
+    margin-top: 30px;
+}
+.email-container > p{
+    margin: 10px 0;
+}
+.orange-kasen{
+    border-bottom: 1.5px solid #F7B260;
+    padding-bottom: .1em;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+}
+.sp-br{
+    display: none;
+}
+@media screen and (max-width:769px){
+    body{
+        font-size: 14px;
+    }
+    .question-container{
+        margin-top: 20px;
+    }
+    details{
+        padding: 10px;
+    }
+    .summary-content{
+        padding: 10px;
+        text-align: left;
+    }
+    .orange-kasen{
+        font-size: 13px;
+    }
+    .sp-br{
+        display: block;
+    }
+    .otoiawase-container{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
