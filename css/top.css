@@ -232,16 +232,11 @@ body{
 /*--------------------*/
 .dubble_button{
     text-align: center;
-    margin-bottom: 80px;
-}
-@media screen and (max-width: 1023px) {
-    .dubble_button{
-        margin-bottom: 40px;
-    }
 }
 /*--------------------*/
 .president{
     text-align: center;
+    padding-top: 80px;
     margin-bottom: 80px;
 }
 .president_hcover{
@@ -256,6 +251,7 @@ body{
 }
 @media screen and (max-width:1023px) {
     .president{
+        padding-top: 40px;
         margin-bottom: 40px;
     }
     .president_hcover{
