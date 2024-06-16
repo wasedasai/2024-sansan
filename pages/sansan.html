@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>2024参加団体・参加者募集サイト</title>
+        <link href="../css/sansan.css" rel="stylesheet" type="text/css">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class="header">
+        </div>
+        <div id="navArea">
+            <nav>
+                <div class="inner">
+                    <ul>
+                        <li><a href="../index.html">Top</a></li>
+                        <li><a href="./sansan.html">参加団体・参加者企画</a></li>
+                        <li><a href="./staff.html">運営スタッフ企画</a></li>
+                        <li><a href="./howto.html">募集の流れ</a></li>
+                        <li><a href="./info.html">参加の手引き</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdeRsmbUborLx9K-tYXsP9Ai0p9SjijIw11jUthCf0L1sarWw/viewform" target="_blank" rel="noopener noreferrer">プレエントリーフォーム</a></li>
+                        <li><a href="../index.html#president_sec">代表挨拶</a></li>
+                        <li><a href="./question.html">よくあるご質問・お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="mask"></div>
+        </div>
+
+        <div class="Hero">
+            <div class="hero_pc">
+                <img src="../img/hero.pc.png" class="herophoto1">
+                <h1>参加団体・参加者企画</h1>
+            </div>
+            <div class="hero_sp">
+                <img src="../img/hero.sp.png"class="herophoto2">
+                <h1>参加団体・参加者企画</h1>
+            </div>
+        </div>
+
+        <section class="ss_contents">
+            <h1>参加団体・参加者企画</h1>
+
+            <div class="ss_list">
+                <a class="ss_event" href="kumastage.html">
+                    <div class="ss_inner ssev01">
+                        <h>大隈講堂前ステージ企画</h>
+                    </div>
+                </a>
+                <a class="ss_event" href="camstage.html">
+                    <div class="ss_inner  ssev02">
+                        <h>キャンパス内ステージ企画</h>
+                    </div>
+                </a>
+                <a class="ss_event" href="street.html">
+                    <div class="ss_inner  ssev03">
+                        <h>ストリート企画</h>
+                    </div>
+                </a>
+                <a class="ss_event" href="drama.html">
+                    <div class="ss_inner ssev04">
+                        <h>どらま館企画</h>
+                    </div>
+                </a>
+                <a class="ss_event" href="koudou.html">
+                    <div class="ss_inner ssev05">
+                        <h>講堂企画</h>
+                    </div>
+                </a>
+                <a class="ss_event" href="kyositu.html">
+                    <div class="ss_inner ssev06">
+                        <h>教室企画</h>
+                    </div>
+                </a>
+                <a class="ss_event" href="art.html">
+                    <div class="ss_inner ssev07">
+                        <h>芸術展企画</h>
+                    </div>
+                </a>
+                <a class="ss_event" href="food.html">
+                    <div class="ss_inner ssev08">
+                        <h>飲食物販売企画</h>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <a href="https://x.com/wasedasai"><img class="sns-link" src="../img/x.png" alt="Xのリンク"/></a>
+            <a href="https://instagram.com/wasedasai_new/"><img class="sns-link" src="../img/instagram.png" alt="Instagramのリンク"/></a>
+        </footer>
+
+        <script>
+            (function($) {
+            var $nav   = $('#navArea');
+            var $btn   = $('.toggle_btn');
+            var $mask  = $('#mask');
+            var open   = 'open'; // class
+            // menu open close
+            $btn.on( 'click', function() {
+                if ( ! $nav.hasClass( open ) ) {
+                $nav.addClass( open );
+                } else {
+                $nav.removeClass( open );
+                }
+            });
+            // mask close
+            $mask.on('click', function() {
+                $nav.removeClass( open );
+            });
+            } )(jQuery);
+        </script>
+    </body>
+</html>
