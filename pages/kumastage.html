@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>2024参加団体・参加者募集サイト</title>
+        <link href="../css/sansanind.css" rel="stylesheet" type="text/css">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class="header">
+        </div>
+        <div id="navArea">
+            <nav>
+                <div class="inner">
+                    <ul>
+                        <li><a href="../index.html">Top</a></li>
+                        <li><a href="./sansan.html">参加団体・参加者企画</a></li>
+                        <li><a href="./staff.html">運営スタッフ企画</a></li>
+                        <li><a href="./howto.html">募集の流れ</a></li>
+                        <li><a href="./info.html">参加の手引き</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdeRsmbUborLx9K-tYXsP9Ai0p9SjijIw11jUthCf0L1sarWw/viewform" target="_blank" rel="noopener noreferrer">プレエントリーフォーム</a></li>
+                        <li><a href="../index.html#president_sec">代表挨拶</a></li>
+                        <li><a href="./question.html">よくあるご質問・お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="mask"></div>
+        </div>
+
+        <div class="Hero">
+            <div class="hero_pc">
+                <img src="../img/hero.pc.png"class="herophoto1">
+                <h1>大隈講堂前ステージ企画</h1>
+            </div>
+            <div class="hero_sp">
+                <img src="../img/hero.sp.png"class="herophoto2">
+                <h1>大隈講堂前ステージ企画</h1>
+            </div>
+        </div>
+
+        <div class="sse_contents">
+            <h1>大隈講堂前ステージ企画</h1>
+
+            <div class="sse_flex">
+                <div class="sse_left">
+                    <div class="sse_pic ssp_okuma"></div>
+                </div>
+                <div class="sse_right">
+                    <h2>企画概要</h2>
+                    <p>大隈講堂前ステージ企画とは、早稲田キャンパス大隈講堂前に設置されるビジョンや照明、音響設備などのあるステージにおいて行われる企画です。</p>
+                    <h2>企画場所</h2>
+                    <p>早稲田キャンパス 大隈講堂前ステージ</p>
+                    <h2>企画日時</h2>
+                    <p>11月2日(土)、3日(日) 10:00～17:00</p>
+                    <h2>個人参加について</h2>
+                    <p>複数名の役職登録が必要になるなため、個人参加は認められていません。</p>
+                </div>
+            </div>
+
+            <h2>企画参加に関する注意事項</h2>
+            <p>当企画への参加条件として、企画運営能力を有していることが必要となります。企画運営能力とは、早稲田祭2024準備期間から当日までにおいて、運営スタッフや放送研究会との信頼関係に基づき、企画を安全かつ確実に遂行する能力を指します。</p>
+
+            <div class="quad_button">
+                <a class="sqbutton" href="https://drive.google.com/file/d/12HExzaylG9Rq3WfQ3SG4U-m8T0fz2Pia/view?usp=drive_link">参加の手引き全企画共通事項</a>
+                <a class="sqbutton" href="https://drive.google.com/file/d/1WeSNtw7NgskUrLC4_Gkl9DdQx09bhErS/view?usp=drive_link" target="_blank" rel="noopener noreferrer">大隈講堂前ステージ企画参加の手引き</a>
+                <a class="sqbutton" href="https://drive.google.com/file/d/1DpVdhI3ANAtAhv9xA2DoYalabbDW-JKQ/view?usp=sharing">早稲田祭2024に関する注意規定</a>
+                <a class="sqbutton" href="https://drive.google.com/file/d/1S3t7kgMbZFqPppxmekUypJw_LY35Izb8/view?usp=sharing">早稲田祭2024著作権に関するガイドライン</a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <a href="https://x.com/wasedasai"><img class="sns-link" src="../img/x.png" alt="Xのリンク"/></a>
+            <a href="https://instagram.com/wasedasai_new/"><img class="sns-link" src="../img/instagram.png" alt="Instagramのリンク"/></a>
+        </footer>
+
+        <script>
+            (function($) {
+            var $nav   = $('#navArea');
+            var $btn   = $('.toggle_btn');
+            var $mask  = $('#mask');
+            var open   = 'open'; // class
+            // menu open close
+            $btn.on( 'click', function() {
+                if ( ! $nav.hasClass( open ) ) {
+                $nav.addClass( open );
+                } else {
+                $nav.removeClass( open );
+                }
+            });
+            // mask close
+            $mask.on('click', function() {
+                $nav.removeClass( open );
+            });
+            } )(jQuery);
+        </script>
+    </body>
+</html>

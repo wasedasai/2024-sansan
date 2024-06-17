@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>2024参加団体・参加者募集サイト</title>
+        <link href="../css/sansanind.css" rel="stylesheet" type="text/css">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class="header">
+        </div>
+        <div id="navArea">
+            <nav>
+                <div class="inner">
+                    <ul>
+                        <li><a href="../index.html">Top</a></li>
+                        <li><a href="./sansan.html">参加団体・参加者企画</a></li>
+                        <li><a href="./staff.html">運営スタッフ企画</a></li>
+                        <li><a href="./howto.html">募集の流れ</a></li>
+                        <li><a href="./info.html">参加の手引き</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdeRsmbUborLx9K-tYXsP9Ai0p9SjijIw11jUthCf0L1sarWw/viewform" target="_blank" rel="noopener noreferrer">プレエントリーフォーム</a></li>
+                        <li><a href="../index.html#president_sec">代表挨拶</a></li>
+                        <li><a href="./question.html">よくあるご質問・お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="mask"></div>
+        </div>
+
+        <div class="Hero">
+            <div class="hero_pc">
+                <img src="../img/hero.pc.png"class="herophoto1">
+                <h1>教室企画</h1>
+            </div>
+            <div class="hero_sp">
+                <img src="../img/hero.sp.png"class="herophoto2">
+                <h1>教室企画</h1>
+            </div>
+        </div>
+
+        <div class="sse_contents">
+            <h1>教室企画</h1>
+
+            <div class="sse_flex">
+                <div class="sse_left">
+                    <div class="sse_pic ssp_class"></div>
+                </div>
+                <div class="sse_right">
+                    <h2>企画概要</h2>
+                    <p>教室企画とは、早稲田キャンパス・戸山キャンパスの教室で行われる企画です。音楽イベント、講習会、学術発表、来場者参加型企画、作品展示などの自由度の高い文化発表が可能です。</p>
+                    <h2>企画場所</h2>
+                    <p>
+                        早稲田キャンパス内教室（3, 7, 8, 10, 11, 14, 15, 16号館）<br>
+                        戸山キャンパス内教室（32, 33, 38号館）
+                    </p>
+                    <h2>企画日時</h2>
+                    <p>11月2日(土)、3日(日) 10:00〜17:00</p>
+                </div>
+            </div>
+
+            <h2>企画紹介</h2>
+            <p>
+                <span class="highlight">普通教室企画</span><br>
+                自由度の高い文化発表が可能な企画です。<br>
+                <br>
+                <span class="highlight">ライブ系企画</span><br>
+                楽器やアンプを使用したバンド演奏や、スピーカーなどを使用した大きな音声での音楽鑑賞が可能な企画です。
+            </p>
+            <h2>募集形態</h2>
+            <p>募集</p>
+            <h2>個人参加について</h2>
+            <p>教室企画は、個人での参加が可能です。個人参加の場合、役職は団体責任者と早稲田祭担当者を兼任していただきます。</p>
+
+            <div class="quad_button">
+                <a class="sqbutton" href="https://drive.google.com/file/d/12HExzaylG9Rq3WfQ3SG4U-m8T0fz2Pia/view?usp=drive_link">参加の手引き全企画共通事項</a>
+                <a class="sqbutton" href="https://drive.google.com/file/d/1l2w5o2tJ6SEeDy0Ol5CrZKLS2wt0i5A8/view?usp=drive_link">教室企画参加の手引き</a>
+                <a class="sqbutton" href="https://drive.google.com/file/d/1DpVdhI3ANAtAhv9xA2DoYalabbDW-JKQ/view?usp=sharing">早稲田祭2024に関する注意規定</a>
+                <a class="sqbutton" href="https://drive.google.com/file/d/1S3t7kgMbZFqPppxmekUypJw_LY35Izb8/view?usp=sharing">早稲田祭2024著作権に関するガイドライン</a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <a href="https://x.com/wasedasai"><img class="sns-link" src="../img/x.png" alt="Xのリンク"/></a>
+            <a href="https://instagram.com/wasedasai_new/"><img class="sns-link" src="../img/instagram.png" alt="Instagramのリンク"/></a>
+        </footer>
+
+        <script>
+            (function($) {
+            var $nav   = $('#navArea');
+            var $btn   = $('.toggle_btn');
+            var $mask  = $('#mask');
+            var open   = 'open'; // class
+            // menu open close
+            $btn.on( 'click', function() {
+                if ( ! $nav.hasClass( open ) ) {
+                $nav.addClass( open );
+                } else {
+                $nav.removeClass( open );
+                }
+            });
+            // mask close
+            $mask.on('click', function() {
+                $nav.removeClass( open );
+            });
+            } )(jQuery);
+        </script>
+    </body>
+</html>
