@@ -133,6 +133,7 @@ main h1 {
     align-items: center;
     justify-content: center;
     position: sticky;
+    position: -webkit-sticky;
     bottom: 0;
     top: 100vh;
 }
@@ -141,7 +142,7 @@ main h1 {
     width: 60px;
 }
 
-@media screen and (min-width:1024px){
+@media screen and (max-width:1023px){
 /* Hero */
 .Hero{
     margin-top: 50px;
