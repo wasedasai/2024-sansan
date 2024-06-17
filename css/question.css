@@ -40,6 +40,7 @@ details[open] .acccordion-content{
 }
 .accordion-content > p{
     padding: 0 16px;
+    text-align: left;
 }
 @keyframes fadeIn {
     0% {

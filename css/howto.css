@@ -33,7 +33,7 @@ body{
 .sansan-container li,
 .dantai-container li{
     display: inline-block;
-    padding: 10px;
+    padding: 10px 2px;
 }
 .sansan-nagare{
     width: 70vw;
@@ -53,6 +53,9 @@ a{
 }
 .br-sp{
     display: none;
+}
+.footer{
+    margin-top: 50px;
 }
 @media screen and (max-width:769px){
     body{
@@ -74,5 +77,11 @@ a{
     }
     .br-pc{
         display: none;
+    }
+    .br-sp{
+        display: block;
+    }
+    .footer{
+        margin-top: 30px;
     }
 }
