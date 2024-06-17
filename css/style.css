@@ -166,14 +166,14 @@ main h1 {
     margin :0;
     padding: 0;
     font-size: 28px;
-    font-family: 'Noto Sans JP , sans-serif';
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: bold;
     color: #3e3a39;
 }
 /* SectionTitle */
 h2{
     color: #3e3a39;
-    font-family: 'Noto Sans JP", sans-serif';
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -222,14 +222,14 @@ nav {
         margin: 0;
         padding: 0;
         font-size: 14px;
-        font-family: 'Noto Sans JP , sans-serif';
+        font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
         font-weight: bold;
         color: #3e3a39;
     }
     /* SectionTitle */
     h2{
         color: #3e3a39;
-        font-family: 'Noto Sans JP , sans-serif';
+        font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
         font-weight: bold;
         font-size: 14px;
         text-align: center;
